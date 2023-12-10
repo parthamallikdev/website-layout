@@ -1,0 +1,38 @@
+
+*{
+    margin: 0;
+   
+}
+
+/* contrainer */
+
+.contraine{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 20px;
+}
+
+.food{
+    border: 2px solid burlywood;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+/* Media-quarey */
+/* Smaller Device */
+@media screen and (max-width:576px) {
+    .contraine{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Medium Device */
+@media screen and(min-width:577px) and (max-width:768px) {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Large Device */
+@media screen and (min-width:769px) and(max-width:992px) {
+    grid-template-columns: repeat(3, 1fr);
+}
